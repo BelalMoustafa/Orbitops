@@ -1,0 +1,24 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.tour-label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000; }
+  .tour-label__text {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1em;
+    transition: opacity 1s;
+    font-size: 1.5em;
+    opacity: 0; }
+    .tour-label__text--show {
+      opacity: 1; }
+    .tour-label__text--hide {
+      opacity: 0; }

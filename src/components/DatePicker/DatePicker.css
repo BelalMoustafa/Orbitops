@@ -1,0 +1,38 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.date-picker {
+  display: inline-flex;
+  min-width: 250px;
+  padding: 1em;
+  z-index: 1000; }
+  .date-picker__display {
+    font-size: 1.5em;
+    color: #fff;
+    transition: text-shadow 1s;
+    cursor: pointer; }
+    .date-picker__display:hover {
+      text-shadow: 1px 1px 10px #fff; }
+  .date-picker__picker {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 0.5em; }
+    .date-picker__picker .rdtPicker {
+      background: #000;
+      margin-top: 1.5em; }
+      .date-picker__picker .rdtPicker th:hover,
+      .date-picker__picker .rdtPicker td:hover {
+        background-color: #1e1e1e !important; }
+      .date-picker__picker .rdtPicker .rdtPrev,
+      .date-picker__picker .rdtPicker .rdtNext {
+        border-color: #000; }
+      .date-picker__picker .rdtPicker .rdtCounter .rdtBtn:hover {
+        background-color: #000; }
+  .date-picker__input {
+    display: none; }

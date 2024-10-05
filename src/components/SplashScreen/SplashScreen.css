@@ -1,0 +1,60 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.splash-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  background: url("/static/img/bg-stars-large.png");
+  background-size: cover;
+  font-size: 1.5em;
+  transition: opacity 0.25s;
+  opacity: 1;
+  z-index: 1000; }
+  .splash-screen--hide {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0; }
+  .splash-screen__hero {
+    width: 50vw;
+    height: 20vw;
+    background-image: url("/static/img/logo-gradient-light.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .splash-screen__content {
+    height: 50px; }
+  .splash-screen__loading {
+    width: 500px;
+    height: 4px;
+    background-color: #808080; }
+  .splash-screen__loading-bar {
+    background-color: #fff;
+    height: 4px; }
+  .splash-screen__button {
+    position: relative;
+    width: 160px;
+    height: 50px;
+    margin: 0 15px;
+    perspective: 1000px; }
+  .splash-screen__button-anchor {
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 0.35em 2em;
+    background-color: transparent;
+    transition: 0.25s all;
+    cursor: pointer; }
+    .splash-screen__button-anchor:hover {
+      background-color: #fff;
+      color: #000; }

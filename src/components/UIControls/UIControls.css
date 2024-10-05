@@ -1,0 +1,71 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.uicontrols {
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1000; }
+  .uicontrols--enabled {
+    opacity: 1; }
+  .uicontrols--disabled {
+    opacity: 0; }
+  .uicontrols__button {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    cursor: pointer; }
+    .uicontrols__button--about-modal {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 50%;
+      font-style: italic; }
+      .uicontrols__button--about-modal:before {
+        content: 'i'; }
+      .uicontrols__button--about-modal:hover {
+        box-shadow: 1px 1px 10px #fff; }
+  .uicontrols__control {
+    position: absolute;
+    opacity: 0.5;
+    transition: opacity 1s; }
+    .uicontrols__control:hover {
+      opacity: 1; }
+    .uicontrols__control--datetime {
+      display: flex;
+      align-items: center;
+      top: 0;
+      right: 0; }
+    .uicontrols__control--target-label {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 3em 0;
+      text-align: center;
+      pointer-events: none; }
+    .uicontrols__control--stats-modal {
+      opacity: 1;
+      pointer-events: auto;
+      font-size: 1.5em;
+      transition: text-shadow 1s;
+      color: #fff;
+      cursor: pointer; }
+      .uicontrols__control--stats-modal:hover {
+        text-shadow: 1px 1px 10px #fff; }
+    .uicontrols__control--scales {
+      bottom: 0;
+      right: 0;
+      pointer-events: none; }
+    .uicontrols__control--left-bar {
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }

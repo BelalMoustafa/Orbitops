@@ -1,0 +1,82 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.spin-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none; }
+  .spin-container--hide {
+    opacity: 0; }
+  .spin-container--show {
+    opacity: 1; }
+
+.spin {
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  width: 300px;
+  margin: auto;
+  align-items: center;
+  justify-content: center; }
+  .spin__label {
+    width: 5em;
+    height: 5em;
+    margin: 1em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: #000;
+    background-color: #fff;
+    text-shadow: 1px 1px #e8e8e8;
+    text-align: center;
+    vertical-align: center;
+    padding: 0 0.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .spin__arrow-container {
+    flex: 1; }
+    .spin__arrow-container--left {
+      display: flex;
+      flex-direction: row-reverse; }
+  .spin__arrow {
+    animation: blink-animation 2s ease-in-out infinite;
+    padding: 0 0.25em;
+    font-weight: bold; }
+    .spin__arrow:nth-of-type(4) {
+      animation-delay: 0s; }
+    .spin__arrow:nth-of-type(3) {
+      animation-delay: -0.25s; }
+    .spin__arrow:nth-of-type(2) {
+      animation-delay: -0.5s; }
+    .spin__arrow:nth-of-type(1) {
+      animation-delay: -0.75s; }
+    .spin__arrow:nth-of-type(5) {
+      animation-delay: 0.25s; }
+    .spin__arrow:nth-of-type(6) {
+      animation-delay: 0.5s; }
+    .spin__arrow:nth-of-type(7) {
+      animation-delay: 0.75s; }
+    .spin__arrow:nth-of-type(8) {
+      animation-delay: 1s; }
+    .spin__arrow--left:before {
+      content: '\2329'; }
+    .spin__arrow--right:before {
+      content: '\232A'; }
+
+@keyframes blink-animation {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }

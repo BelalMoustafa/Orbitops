@@ -1,0 +1,18 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.markdown {
+  overflow: auto;
+  line-height: 1.4em;
+  flex: 1; }
+  .markdown::-webkit-scrollbar {
+    width: 5px; }
+    .markdown::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: transparent; }
+  .markdown:hover::-webkit-scrollbar-thumb {
+    background-color: #808080; }

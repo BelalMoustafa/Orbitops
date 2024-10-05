@@ -1,0 +1,30 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.no-webgl {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .no-webgl__body {
+    margin-top: 1em;
+    max-width: 500px;
+    width: 100%;
+    text-align: center; }
+  .no-webgl__title {
+    font-size: 3em; }
+  .no-webgl__anchor {
+    color: #fff;
+    text-decoration: underline; }
+    .no-webgl__anchor:hover {
+      text-decoration: none; }

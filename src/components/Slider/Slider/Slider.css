@@ -1,0 +1,50 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+/* slider var names are w.r.t. a horizontal orientation */
+.slider {
+  flex: 1;
+  margin: auto; }
+  .slider--horizontal {
+    height: 36px; }
+  .slider--vertical {
+    width: 36px; }
+  .slider__label {
+    box-sizing: border-box;
+    display: block;
+    margin: 1em 0;
+    color: #fff; }
+  .slider__container {
+    background-color: #fff;
+    color: #fff; }
+    .slider__container--horizontal {
+      width: 100%;
+      height: 4px;
+      margin-top: 16px;
+      cursor: ew-resize; }
+    .slider__container--vertical {
+      height: 100%;
+      width: 4px;
+      margin-left: 16px;
+      cursor: ns-resize; }
+  .slider__handle {
+    text-align: center;
+    background-color: #fff;
+    font-size: 0;
+    cursor: pointer; }
+    .slider__handle--horizontal {
+      width: 6px;
+      height: 32px;
+      margin-top: -14px;
+      cursor: ew-resize; }
+    .slider__handle--vertical {
+      width: 32px;
+      height: 6px;
+      margin-left: -14px;
+      cursor: ns-resize; }
+  .slider__bar {
+    position: relative; }

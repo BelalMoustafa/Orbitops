@@ -1,0 +1,29 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.label--active {
+  animation: glowing-text 1s infinite;
+  pointer-events: none;
+  font-size: 1.5em; }
+
+.label--inactive {
+  color: #fff;
+  cursor: pointer;
+  transition: font-size 1s; }
+  .label--inactive:hover {
+    text-shadow: 1px 1px 10px #fff;
+    font-size: 1.5em; }
+
+@keyframes glowing-text {
+  0% {
+    text-shadow: 0; }
+  40% {
+    text-shadow: 1px 1px 10px #fff; }
+  60% {
+    text-shadow: 1px 1px 10px #fff; }
+  100% {
+    text-shadow: 0; } }

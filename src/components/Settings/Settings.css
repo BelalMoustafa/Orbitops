@@ -1,0 +1,80 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.settings-panel {
+  min-width: 300px;
+  color: #fff;
+  transition: all 1s;
+  pointer-events: none; }
+  .settings-panel__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+  .settings-panel__title {
+    align-items: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    opacity: 0;
+    transition: all 1s;
+    font-size: 1.5em; }
+  .settings-panel__content {
+    padding: 0 1em;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s; }
+  .settings-panel__hamburger {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin: 1em;
+    transform: rotate(0deg);
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    pointer-events: auto; }
+    .settings-panel__hamburger span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background: #fff;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.5s ease-in-out; }
+      .settings-panel__hamburger span:nth-child(1) {
+        top: 3px;
+        transform-origin: left center; }
+      .settings-panel__hamburger span:nth-child(2) {
+        top: 15px;
+        transform-origin: left center; }
+      .settings-panel__hamburger span:nth-child(3) {
+        top: 27px;
+        transform-origin: left center; }
+    .settings-panel__hamburger:hover span {
+      box-shadow: 1px 1px 10px #fff; }
+    .settings-panel__hamburger--open span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 2px;
+      left: 4px; }
+    .settings-panel__hamburger--open span:nth-child(2) {
+      width: 0%;
+      opacity: 0; }
+    .settings-panel__hamburger--open span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 24px;
+      left: 4px; }
+  .settings-panel--open {
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: auto; }
+    .settings-panel--open .settings-panel__content {
+      max-height: 200px; }
+    .settings-panel--open .settings-panel__title {
+      display: flex;
+      opacity: 1; }

@@ -1,0 +1,50 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.tour {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s; }
+  .tour--show {
+    display: flex;
+    opacity: 1;
+    z-index: 1000; }
+  .tour--hide {
+    pointer-events: none;
+    opacity: 0; }
+  .tour--skip {
+    display: none; }
+  .tour__labels {
+    width: 100%;
+    align-items: justify;
+    text-align: center;
+    position: relative; }
+  .tour__theater-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background-color: #000;
+    transition: height 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .tour__theater-bar--hide {
+      height: 0;
+      overflow: hidden; }
+  .tour__skip-link {
+    font-style: italic;
+    color: #fff;
+    cursor: pointer; }
+    .tour__skip-link:hover {
+      text-shadow: 1px 1px 10px #fff; }

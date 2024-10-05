@@ -1,0 +1,53 @@
+/* colors */
+/* decorations */
+/* animations */
+/* font sizes */
+/* font family */
+/* padding */
+/* z-index */
+.modal {
+  line-height: 1.4em;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: scroll;
+  box-sizing: border-box;
+  top: 0;
+  right: -999px;
+  bottom: 0;
+  width: 40%;
+  min-width: 600px;
+  opacity: 0;
+  padding: 1em;
+  transition-property: background-color, opacity, right;
+  transition-duration: 1s;
+  z-index: 1000; }
+  @media screen and (max-width: 600px) {
+    .modal {
+      width: 100%;
+      min-width: 100%; } }
+  .modal--open {
+    right: 0;
+    opacity: 1; }
+  .modal__header {
+    border-bottom: 1px dotted #fff;
+    font-size: 2em;
+    padding: 0.5em 0; }
+  .modal__content {
+    display: flex;
+    font-size: 0.9em;
+    line-height: 1.4em; }
+    .modal__content p {
+      text-indent: 50px; }
+    .modal__content a {
+      color: #fff; }
+      .modal__content a:hover {
+        text-decoration: none; }
+  .modal__close {
+    float: right;
+    cursor: pointer;
+    transition: all 1s; }
+    .modal__close:hover {
+      text-shadow: 1px 1px 10px #fff; }
