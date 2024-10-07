@@ -1,15 +1,15 @@
 export const LABELS = [
     {
         duration: 2500,
-        text: 'Welcome to the Solar System'
+        text: 'Embark on a Journey Through the Cosmos'
+    },
+    {
+        duration: 4500,
+        text: 'Experience the dynamic motions of planets, moons, and near-Earth objects'
     },
     {
         duration: 4000,
-        text: 'This is a real-time interactive simulation of major planetary bodies'
-    },
-    {
-        duration: 3500,
-        text: 'Let\'s start exploring'
+        text: 'Let the wonders of space unfold before your eyes'
     }
 ];
 
